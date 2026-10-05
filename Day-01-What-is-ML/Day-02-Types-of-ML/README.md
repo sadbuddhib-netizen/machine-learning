@@ -1,0 +1,191 @@
+# Day 2 — Types of Machine Learning
+
+Today I learned about the **four major types of Machine Learning**:
+
+1. Supervised Learning
+2. Unsupervised Learning
+3. Semi-Supervised Learning
+4. Reinforcement Learning
+
+---
+
+## 1. Supervised Learning
+
+In supervised learning, the model learns from **labeled data**.
+
+We provide:
+
+**Input (features) + Output (label) → Model**
+
+There are two major types:
+
+### Classification
+
+Classification is used when the output belongs to a **category/class**.
+
+Examples:
+
+- Dog / Cat
+- Yes / No
+- Spam / Not Spam
+- Pass / Fail
+
+The output is usually a **class/category**, not a continuous numerical value.
+
+### Regression
+
+Regression is used when the output is a **continuous numerical value**.
+
+Examples:
+
+- House price → ₹50,00,000
+- Salary → ₹8,00,000
+- Temperature → 32.5°C
+- Sales → ₹1,25,000
+
+### Important Decision
+
+Before building a Machine Learning model, we need to understand:
+
+**What type of problem am I solving?**
+
+Then we choose the appropriate ML approach and algorithm.
+
+---
+
+## 2. Unsupervised Learning
+
+In unsupervised learning, the data does **not have labeled outputs**.
+
+The model tries to discover patterns or structures within the data.
+
+Major applications include:
+
+### Clustering
+
+Similar data points are grouped together.
+
+Example:
+
+A shopping company can group customers into:
+
+- Budget customers
+- Regular customers
+- Premium customers
+
+### Dimensionality Reduction
+
+Dimensionality reduction reduces the number of features while trying to preserve important information.
+
+Example:
+100 features → PCA → 10 components
+
+PCA (Principal Component Analysis): A technique that reduces many features into fewer important components while preserving most of the useful information.  
+Purpose: Reduce complexity and make the data easier to process. 
+
+### Anomaly Detection
+
+Anomaly detection identifies unusual or abnormal observations.
+
+Examples:
+
+- Detecting unusual transactions
+- Detecting abnormal machine behavior
+- Detecting unusual patterns in medical data
+
+### Association Rule Learning
+
+Association rules discover relationships between items.
+
+A common example is **market basket analysis**:
+
+> Customers who buy one product may also tend to buy another product.
+
+Supermarkets can use these patterns to decide product placement or recommendations.
+
+---
+
+## 3. Semi-Supervised Learning
+
+Semi-supervised learning uses a combination of:
+
+**Small amount of labeled data + Large amount of unlabeled data**
+
+This is useful when labeling a large dataset is expensive or time-consuming.
+
+Example:
+
+**Google Photos**
+
+Some photos may be labeled while many others are unlabeled. The system can use both labeled and unlabeled information to learn patterns.
+
+---
+
+## 4. Reinforcement Learning
+
+Reinforcement learning is based on **learning through interaction and feedback**.
+
+An agent interacts with an environment and receives:
+
+- **Reward** → good action
+- **Penalty** → bad action
+
+### Basic Process
+
+1. **Observe** the current state
+2. **Select an action** using a policy
+3. **Take the action**
+4. **Receive reward or penalty**
+5. **Update the policy**
+6. **Repeat**
+7. Gradually learn an **optimal policy**
+
+### Example: Training a Dog
+
+If a dog performs the correct action:
+
+**Good behavior → Reward**
+
+If it performs an unwanted action:
+
+**Wrong behavior → No reward / appropriate negative feedback**
+
+Over time, the dog learns which actions lead to rewards.
+
+Other examples include:
+
+- Self-driving systems
+- Game-playing agents
+- Robotics
+
+---
+
+## My Key Takeaway
+
+The first thing we should understand when starting an ML project is:
+
+**What kind of problem are we solving?**
+
+Then we choose the appropriate learning approach.
+
+```text
+Machine Learning
+│
+├── Supervised Learning
+│   ├── Classification
+│   └── Regression
+│
+├── Unsupervised Learning
+│   ├── Clustering
+│   ├── Dimensionality Reduction
+│   ├── Anomaly Detection
+│   └── Association Rule Learning
+│
+├── Semi-Supervised Learning
+│
+└── Reinforcement Learning
+```
+
+### What I learned today
+
+I learned how the four major types of Machine Learning differ and when each type can be used. I also learned the difference between classification and regression and the major applications of unsupervised learning.
