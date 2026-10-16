@@ -1,0 +1,102 @@
+# Day 6 — Challenges in Machine Learning
+
+Today I learned about the common challenges faced when building Machine Learning models.
+
+## 1. Data Collection
+
+Collecting sufficient, relevant data can be difficult.
+
+**Solutions:** APIs and web scraping.
+
+**Example:** Collecting product prices from different websites.
+
+## 2. Insufficient Data and Labeled Data
+
+Machine Learning models need enough good-quality data to learn useful patterns. Some algorithms also require labeled data.
+
+**Example:** Training a dog-vs-cat classifier with only a few labeled images may give poor results.
+
+## 3. Non-Representative Data
+
+The training data does not represent the real-world population or situations.
+
+**Example:** Surveying only Pakistan cricket fans to predict the winner of an India vs Pakistan match can produce biased results.
+
+**Solution:** Use representative and diverse samples.
+
+## 4. Poor-Quality Data
+
+Data may contain errors, missing values, duplicates, noise, or contradictory information.
+
+**Example:** A dataset contains incorrect product prices or missing customer details.
+
+**Solution:** Clean and validate the data.
+
+## 5. Irrelevant Features
+
+Some features do not help solve the problem.
+
+**Example:** For predicting marathon running performance, age and previous running times may be useful, while height might be less useful depending on the dataset.
+
+**Key concept:** Garbage in, garbage out (GIGO).
+
+## 6. Overfitting and Underfitting
+
+### Overfitting
+
+The model memorizes the training data instead of learning patterns that generalize to new data.
+
+**Example:**
+- Training accuracy: 98%
+- Testing accuracy: 60%
+
+### Underfitting
+
+The model fails to learn the important patterns in the data.
+
+**Example:**
+- Training accuracy: 55%
+- Testing accuracy: 53%
+
+### Train-Test Split
+
+A common starting point is an 80:20 split.
+
+For 10,000 rows:
+
+- Training data (80%): 8,000 rows
+- Testing data (20%): 2,000 rows
+
+The test set helps evaluate how well the model performs on unseen data. An 80:20 split does not automatically prevent overfitting.
+
+## 7. Software Integration
+
+A trained model must be integrated into an application or existing software system.
+
+**Example:** Integrating a fraud-detection model into an online payment system.
+
+## 8. Continuous Changes in Data
+
+Real-world data and user behavior can change over time. A model that worked well previously may become less accurate.
+
+**Example:** Customer shopping preferences change over time.
+
+**Solution:** Monitor model performance and retrain when necessary.
+
+## 9. Deployment, Updates, and Cost
+
+Deploying and maintaining a model requires infrastructure, testing, monitoring, and money.
+
+In batch learning, a model may be retrained periodically and then deployed or updated in production.
+
+**Example:** An e-commerce company retrains its sales prediction model every week.
+
+## Key Takeaways
+
+- Good data is essential for good predictions.
+- Training data should represent real-world situations.
+- Irrelevant features and poor-quality data can harm performance.
+- Overfitting means memorizing training data; underfitting means failing to learn important patterns.
+- Models need testing, deployment, monitoring, and maintenance.
+
+**What I learned:** Building a Machine Learning model is not just about choosing an algorithm. Data quality, generalization, deployment, and ongoing maintenance are also important.
